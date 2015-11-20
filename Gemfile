@@ -33,8 +33,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'sqlite3', '1.3.11'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'web-console', '2.2.1'
+  gem 'spring', '1.4.4'
 end
 
 group :development do
@@ -46,8 +49,8 @@ group :development do
 end
 
 group :production do 
-	gem 'pg', '0.17.1'
-	gem 'rails_12factor', '0.0.2'
+	gem 'pg', '0.18.4'
+	gem 'rails_12factor', '0.0.3'
 end
 
 
